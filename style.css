@@ -673,6 +673,7 @@ footer p {
 
 footer .row-1 {
     width: 90%;
+    margin-bottom: 100px;
 }
 
 footer .grid-container {
@@ -687,7 +688,10 @@ footer .row-2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 0px 30px;
+    padding: 10px 0px 0px;
+}
+footer img{
+    margin: 0px 8px;
 }
 
 
