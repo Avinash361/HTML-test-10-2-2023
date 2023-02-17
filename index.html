@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Agency</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
@@ -26,17 +27,22 @@
                 </div>
             </section>
         </div>
-
         <div class="row-2">
-            <div class="topnav" id="myTopnav">
-                <a href="#home" class="active">Home</a>
-                <a href="#news">About</a>
-                <a href="#about">Services</a>
-                <a href="#about">Projects</a>
-                <a href="#contact" class="btn">Contact Us</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="material-icons" style="font-size:48px;color:#377DFF">menu</i>
-                </a>
+            <div class="header--container">
+                <button class="nav-toggle" aria-expanded="false">
+                    <span class="visually-hidden">
+                        <i class="material-icons" style="font-size:48px;color:#377DFF">menu</i>
+                    </span>
+                </button>
+                <nav class="primary-navigation">
+                    <ul class="nav-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li class="contact"><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
@@ -57,9 +63,9 @@
                 <h5><img src="assets/star.png" alt=""> GREAT PROJECT</h5>
                 <h3>800+ <span>Done</span> </h3>
             </div>
-            <img src="assets/Group 2137.png" alt="" class="group-pts-1" />
+            <img src="assets/Group 2140.png" alt="" class="group-pts-1" />
             <img src="assets/Rectangle 844.png" alt="" />
-            <img src="assets/Group 2137.png" alt="" class="group-pts-2" />
+            <img src="assets/Group 2141.png" alt="" class="group-pts-2" />
             <div class="box-2">
                 <div class="user-box">
                     <div class="user-photo">
@@ -85,7 +91,12 @@
             <h2>Our Teammate</h2>
         </div>
         <div class="row-2">
-            <img src="assets/Rectangle 832.png" alt="">
+            <div class="image-pos">
+                <img src="assets/Group 2141.png" alt="" class="group-pts-1" />
+                <img src="assets/Rectangle 832.png" alt="" />
+                <img src="assets/Group 2144.png" alt="" class="group-pts-2" />
+            </div>
+            <!-- <img src="assets/Rectangle 832.png" alt=""> -->
             <div class="col-2">
                 <h5>We move with make a Creative Strategy for help your business goal, we help to improve your income by
                     a services we have. make your content look interesting and make people look for your business</h5>
@@ -227,6 +238,7 @@
             </div>
             <div class="col-2">
                 <div class="image-pos">
+                    <img src="assets/Group 2137.png" alt="" class="group-pts-1" />
                     <img src="assets/Rectangle 840.png" alt="" class="img-1">
                     <img src="assets/Rectangle 839.png" alt="" class="img-2">
                 </div>
@@ -286,17 +298,7 @@
         </div>
     </footer>
 
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-
-    </script>
+    <script defer src="./script.js"></script>
 </body>
 
 </html>
